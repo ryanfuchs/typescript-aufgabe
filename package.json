@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "test": "mocha"
+        "test": "mocha",
+        "watch": "c:\\Users\\vmadmin\\Documents\\typescript-aufgabe\\node_modules\\.bin\\tsc.cmd -p c:\\Users\\vmadmin\\Documents\\typescript-aufgabe\\tsconfig.json -w"
     },
     "author": "Domenic Helfenstein",
     "license": "MIT",
