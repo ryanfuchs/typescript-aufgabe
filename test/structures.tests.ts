@@ -63,5 +63,14 @@ describe("Data structures", () => {
             const result = testee.size();
             expect(result).to.equal(1);
         });
+
+        it("has enqueued item", () => {
+            const testee = new Stack();
+            const enqueueItem = "first";
+            testee.enqueue(enqueueItem);
+            const result = testee.peek();
+            expect(result).to.equal(enqueueItem);
+        });
+
     //node node_modules/mocha/bin/mocha -r ts-node/register **/*.tests.ts
 })

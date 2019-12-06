@@ -11,4 +11,9 @@ export class Stack implements IDataStructure {
     enqueue(value : any) {
         this.store.push(value)
     }
+
+
+    peek() {
+        return this.store.filter(x => true).pop();
+    }
 }
