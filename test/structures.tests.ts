@@ -94,7 +94,7 @@ describe("Data structures", () => {
             expect(result).to.be.an.instanceOf(Queue);
         })
         
-        it("can create Qtack", () => {
+        it("can create Stack", () => {
             const structureType = DataStructures.Stack;
             const result = DataStructureFactory.create(structureType);
             expect(result).to.be.an.instanceOf(Stack);
