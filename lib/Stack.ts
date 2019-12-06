@@ -7,4 +7,8 @@ export class Stack implements IDataStructure {
     public size(): number {
         return this.store.length;
 }
+
+    enqueue(value : any) {
+        this.store.push(value)
+    }
 }

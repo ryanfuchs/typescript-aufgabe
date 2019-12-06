@@ -56,5 +56,12 @@ describe("Data structures", () => {
             const result = testee.size();
             expect(result).to.equal(0);
         });
+
+        it("has item", () => {
+            const testee = new Stack();
+            testee.enqueue("first");
+            const result = testee.size();
+            expect(result).to.equal(1);
+        });
     //node node_modules/mocha/bin/mocha -r ts-node/register **/*.tests.ts
 })
