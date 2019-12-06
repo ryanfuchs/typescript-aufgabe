@@ -1,5 +1,8 @@
 import { expect } from "chai";
 import { Queue } from "../lib/Queue";
+import { Stack } from "../lib/Stack";
+import { DataStructures } from "../lib/DataStructures";
+import { DataStructureFactory } from "../lib/DataStructureFactory";
 
 describe("Data structures", () => {
     describe("Queue", () => {
