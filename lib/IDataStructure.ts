@@ -3,5 +3,5 @@ export interface IDataStructure {
     enqueue(value :any) :any;
     peek() :any;
     poll() :any;
-    
+    isEmpty(): boolean;
 }
