@@ -9,6 +9,13 @@ describe("Data structures", () => {
             expect(result).to.equal(0);
         })
     })
+    
+    it("has item", () => {
+        const testee = new Queue();
+        testee.enqueue("first");
+        const result = testee.size();
+        expect(result).to.equal(1);
+    });
 
     // describe("Factory", () => {
     //     it("can create Queue", () => {
