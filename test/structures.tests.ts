@@ -50,12 +50,11 @@ describe("Data structures", () => {
         });
     })
     
-    // describe("Factory", () => {
-    //     it("can create Queue", () => {
-    //         const structureType = DataStructures.Queue;
-    //         const result = DataStructureFactory.create(structureType);
-    //         expect(result).to.be.an.instanceOf(Queue);
-    //     })
-    // })
+    describe("Stack", () => {
+        it("has size", () => {
+            const testee = new Stack();
+            const result = testee.size();
+            expect(result).to.equal(0);
+        });
     //node node_modules/mocha/bin/mocha -r ts-node/register **/*.tests.ts
 })
