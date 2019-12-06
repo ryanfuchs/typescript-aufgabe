@@ -16,4 +16,9 @@ export class Stack implements IDataStructure {
     peek() {
         return this.store.filter(x => true).pop();
     }
+
+    poll() {
+        return this.store.pop();
+    }
+
 }

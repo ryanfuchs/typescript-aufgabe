@@ -72,5 +72,14 @@ describe("Data structures", () => {
             expect(result).to.equal(enqueueItem);
         });
 
+        it("remove last added item", () => {
+            const testee = new Stack();
+            const enqueueItem = "second";
+            testee.enqueue("first");
+            testee.enqueue(enqueueItem);
+            const result = testee.poll();
+            expect(result).to.equal(enqueueItem);
+            expect(testee.size()).to.equal(1);
+        });
     //node node_modules/mocha/bin/mocha -r ts-node/register **/*.tests.ts
 })
