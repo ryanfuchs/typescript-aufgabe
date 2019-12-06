@@ -6,12 +6,15 @@ export class Stack implements IDataStructure {
 
     public size(): number {
         return this.store.length;
-}
+    }
 
     enqueue(value : any) {
         this.store.push(value)
     }
 
+    isEmpty(): boolean {
+        return this.store.length == 0;
+    }
 
     peek() {
         return this.store.filter(x => true).pop();

@@ -81,5 +81,11 @@ describe("Data structures", () => {
             expect(result).to.equal(enqueueItem);
             expect(testee.size()).to.equal(1);
         });
+
+        it("is empty", () => {
+            const testee = new Stack();
+            expect(testee.isEmpty()).to.be.true;
+        });
+    });
     //node node_modules/mocha/bin/mocha -r ts-node/register **/*.tests.ts
 })
