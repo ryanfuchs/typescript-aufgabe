@@ -8,42 +8,45 @@ describe("Data structures", () => {
             const result = testee.size();
             expect(result).to.equal(0);
         })
+
+        it("has item", () => {
+            const testee = new Queue();
+            testee.enqueue("first");
+            const result = testee.size();
+            expect(result).to.equal(1);
+        });
+
+        it("has enqueued item", () => {
+            const testee = new Queue();
+            const enqueueItem = "first";
+            testee.enqueue(enqueueItem);
+            const result = testee.peek();
+            expect(result).to.equal(enqueueItem);
+        });
+
+        it("hans enqued item with defiend Queue", () => {
+            const testee = new Queue<String>();
+            //const enqueueItem = "first";
+            testee.enqueue("first");
+            const result = testee.peek();
+            expect(result).to.equal("first");
+        });
+
+        it("remove first item", () => {
+            const testee = new Queue();
+            const enqueueItem = "first";
+            testee.enqueue(enqueueItem);
+            testee.enqueue("second");
+            const result = testee.poll();
+            expect(result).to.equal(enqueueItem);
+            expect(testee.size()).to.equal(1);
+        });
+        it("is empty", () => {
+            const testee = new Queue();
+            expect(testee.isEmpty()).to.be.true;
+        });
     })
-
-    it("has item", () => {
-        const testee = new Queue();
-        testee.enqueue("first");
-        const result = testee.size();
-        expect(result).to.equal(1);
-    });
-
-    it("has enqueued item", () => {
-        const testee = new Queue();
-        const enqueueItem = "first";
-        testee.enqueue(enqueueItem);
-        const result = testee.peek();
-        expect(result).to.equal(enqueueItem);
-    });
-
-    it("hans enqued item with defiend Queue", () => {
-        const testee = new Queue<String>();
-        //const enqueueItem = "first";
-        testee.enqueue("first");
-        const result = testee.peek();
-        expect(result).to.equal("first");
-    });
-
-    it("remove first item", () => {
-        const testee = new Queue();
-        const enqueueItem = "first";
-        testee.enqueue(enqueueItem);
-        testee.enqueue("second");
-        const result = testee.poll();
-        expect(result).to.equal(enqueueItem);
-        expect(testee.size()).to.equal(1);
-    });
-
-
+    
     // describe("Factory", () => {
     //     it("can create Queue", () => {
     //         const structureType = DataStructures.Queue;
