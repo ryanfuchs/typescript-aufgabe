@@ -27,9 +27,8 @@ describe("Data structures", () => {
             expect(result).to.equal(enqueueItem);
         });
 
-        it("has enqued item with defiend Queue", () => {
+        it("has enqued item with defiend queue", () => {
             const testee = new Queue<String>();
-            //const enqueueItem = "first";
             testee.enqueue("first");
             const result = testee.peek();
             expect(result).to.equal("first");
@@ -95,11 +94,10 @@ describe("Data structures", () => {
             expect(result).to.be.an.instanceOf(Queue);
         })
         
-        it("can create Stack", () => {
+        it("can create Qtack", () => {
             const structureType = DataStructures.Stack;
             const result = DataStructureFactory.create(structureType);
             expect(result).to.be.an.instanceOf(Stack);
         });
     })
-    //node node_modules/mocha/bin/mocha -r ts-node/register **/*.tests.ts
 })
