@@ -1,2 +1,14 @@
 .vscode
 node_modules
+lib/DataStructureFactory.js
+lib/DataStructureFactory.js.map
+lib/DataStructures.js.map
+lib/DataStructures.js
+lib/Stack.js.map
+lib/Stack.js
+lib/Queue.js.map
+lib/Queue.js
+test/structures.tests.js.map
+test/structures.tests.js
+lib/IDataStructure.js.map
+lib/IDataStructure.js
